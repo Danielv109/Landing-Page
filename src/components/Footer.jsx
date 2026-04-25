@@ -4,16 +4,12 @@ export default function Footer() {
       <div className="container">
         <div className="footer__top">
           <div className="footer__brand">
-            <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-              <img 
-                src="/icon-eter.jpg" 
-                alt="eter" 
-                width="24" 
-                height="24" 
-                style={{ borderRadius: 4, filter: 'invert(1)' }} 
-              />
-              <span style={{ fontWeight: 800, fontSize: '1.1rem', letterSpacing: '-0.03em', color: '#fff' }}>eter</span>
-            </div>
+            <img 
+              src="/logo-eter-white.png" 
+              alt="eter" 
+              height="22" 
+              style={{ display: 'block' }} 
+            />
             <p>
               Plataforma SaaS modular que se adapta a tu negocio. 
               Solo activa los módulos que necesitas, solo paga por lo que usas.

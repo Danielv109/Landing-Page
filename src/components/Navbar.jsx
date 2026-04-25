@@ -29,18 +29,10 @@ export default function Navbar() {
         <div className="container navbar__inner">
           <div className="navbar__logo" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} style={{ cursor: 'pointer' }}>
             <img 
-              src="/icon-eter.jpg" 
+              src={scrolled ? '/logo-eter-black.png' : '/logo-eter-white.png'} 
               alt="eter" 
-              width="28" 
-              height="28" 
-              style={{ borderRadius: 6, filter: scrolled ? 'none' : 'invert(1)' }} 
+              style={{ objectFit: 'contain' }} 
             />
-            <span style={{ 
-              fontWeight: 800, 
-              fontSize: '1.25rem', 
-              letterSpacing: '-0.03em',
-              color: scrolled ? '#000' : '#fff'
-            }}>eter</span>
           </div>
 
           <div className="navbar__links">

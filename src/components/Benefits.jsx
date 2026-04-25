@@ -48,7 +48,7 @@ export default function Benefits() {
           <div className="benefits__header">
             <div className="benefits__label">¿Por qué eter?</div>
             <h2 className="benefits__title">
-              El problema no es tu negocio. Es tu software.
+              El problema no es tu negocio, es tu software
             </h2>
             <p className="benefits__description">
               Software inflado, implementaciones eternas y costos ocultos. 
