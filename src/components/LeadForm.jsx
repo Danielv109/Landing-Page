@@ -276,6 +276,7 @@ export default function LeadForm() {
                   className="btn btn--accent btn--large"
                   disabled={status === 'loading'}
                   id="submit-lead"
+                  style={{ background: '#000', border: '1px solid rgba(255,255,255,0.25)' }}
                 >
                   {status === 'loading' ? (
                     <>
@@ -283,7 +284,7 @@ export default function LeadForm() {
                       Enviando...
                     </>
                   ) : (
-                    'Empieza tu prueba gratis →'
+                    <><span>Empieza tu prueba gratis </span><span className="btn__arrow">→</span></>
                   )}
                 </button>
               </div>
