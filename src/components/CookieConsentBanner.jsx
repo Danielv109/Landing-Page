@@ -18,9 +18,7 @@ export default function CookieConsentBanner() {
   const handleAccept = () => {
     try {
       localStorage.setItem(COOKIE_CONSENT_KEY, "accepted");
-    } catch {
-      // no-op
-    }
+    } catch {}
     setVisible(false);
   };
 

@@ -2,7 +2,6 @@ import { lazy, Suspense } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import CookieConsentBanner from "./components/CookieConsentBanner";
 
-// Lazy load pages for code splitting
 const Home = lazy(() => import("./pages/Home"));
 const Terms = lazy(() => import("./pages/Terms"));
 const Privacy = lazy(() => import("./pages/Privacy"));
@@ -15,7 +14,6 @@ const BlogPost = lazy(() =>
   import("./pages/Blog").then((m) => ({ default: m.BlogPost })),
 );
 
-// Minimal loading fallback
 function LoadingFallback() {
   return (
     <div

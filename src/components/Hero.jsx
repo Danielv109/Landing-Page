@@ -41,7 +41,6 @@ export default function Hero() {
 
   return (
     <section className="hero" id="hero">
-      {/* Animated mesh background */}
       <div className="hero__bg">
         <div className="hero__mesh">
           <div className="hero__mesh-line hero__mesh-line--1" />
@@ -55,7 +54,6 @@ export default function Hero() {
         <div className="hero__gradient-orb hero__gradient-orb--2" />
         <div className="hero__gradient-orb hero__gradient-orb--3" />
 
-        {/* Animated waves at bottom */}
         <div className="hero__waves">
           <svg
             className="hero__wave hero__wave--1"
