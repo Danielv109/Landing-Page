@@ -156,7 +156,6 @@ export default function Cookies() {
             cualquier otro fuero concurrente.
           </p>
 
-<<<<<<< HEAD
           <div
             style={{
               marginTop: "3rem",
@@ -169,18 +168,6 @@ export default function Cookies() {
             <p style={{ margin: 0, fontSize: "0.875rem", color: "#525252" }}>
               <strong>Contacto:</strong> Para consultas sobre esta política de
               cookies, escriba a <strong>etermx00@gmail.com</strong>
-=======
-          <div style={{
-            marginTop: '3rem',
-            padding: '1.5rem',
-            background: '#f5f5f5',
-            borderRadius: '12px',
-            borderLeft: '4px solid #6366f1',
-          }}>
-            <p style={{ margin: 0, fontSize: '0.875rem', color: '#525252' }}>
-              <strong>Contacto:</strong> Para consultas sobre esta política de cookies, 
-              escriba a <strong>etermx00@gmail.com</strong>
->>>>>>> b0defec16bc123311053d61a8bb98cc5de48dd3a
             </p>
           </div>
         </div>
