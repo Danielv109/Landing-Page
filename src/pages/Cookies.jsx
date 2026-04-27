@@ -124,7 +124,7 @@ export default function Cookies() {
           }}>
             <p style={{ margin: 0, fontSize: '0.875rem', color: '#525252' }}>
               <strong>Contacto:</strong> Para consultas sobre esta política de cookies, 
-              escriba a <strong>privacidad@eter.app</strong>
+              escriba a <strong>etermx00@gmail.com</strong>
             </p>
           </div>
         </div>
