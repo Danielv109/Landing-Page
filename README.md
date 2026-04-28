@@ -10,8 +10,3 @@ Guia rapida para comenzar
 
 2. Inicia el entorno de desarrollo:
    npm run dev
-
-3. Abre el sitio en el navegador:
-   http://localhost:5173
-
-Puedes editar la app desde src/App.jsx y los componentes en src/pages.
