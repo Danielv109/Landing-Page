@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import emailjs from "@emailjs/browser";
 import ScrollAnimation from "./ScrollAnimation";
 import { trackEvent } from "../utils/analytics";
@@ -326,25 +327,25 @@ export default function LeadForm() {
                 }}
               >
                 Al registrarte aceptas nuestros{" "}
-                <a
-                  href="/terms"
+                <Link
+                  to="/terminos"
                   style={{
                     textDecoration: "underline",
                     color: "var(--color-gray-400)",
                   }}
                 >
                   Términos de Servicio
-                </a>{" "}
+                </Link>{" "}
                 y{" "}
-                <a
-                  href="/privacy"
+                <Link
+                  to="/privacidad"
                   style={{
                     textDecoration: "underline",
                     color: "var(--color-gray-400)",
                   }}
                 >
                   Política de Privacidad
-                </a>
+                </Link>
               </p>
             </form>
           </ScrollAnimation>
