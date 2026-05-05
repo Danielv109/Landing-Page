@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import emailjs from "@emailjs/browser";
+import { Check, CheckCircle, AlertCircle } from "lucide-react";
 import ScrollAnimation from "./ScrollAnimation";
 import { trackEvent } from "../utils/analytics";
 
@@ -113,9 +114,11 @@ export default function LeadForm() {
           <div style={{ maxWidth: 600, margin: "0 auto" }}>
             <div className="lead-form">
               <div className="lead-form__success">
-                <div className="lead-form__success-icon">✓</div>
+                <div className="lead-form__success-icon">
+                  <CheckCircle size={32} strokeWidth={1.5} color="var(--color-success)" />
+                </div>
                 <h3 className="lead-form__success-title">
-                  ¡Bienvenido a eter!
+                  ¡Bienvenido a Éter!
                 </h3>
                 <p className="lead-form__success-text">
                   Hemos recibido tu solicitud. Nuestro equipo se pondrá en
@@ -145,23 +148,23 @@ export default function LeadForm() {
               </h2>
               <p className="cta-section__text">
                 Únete a más de 50 negocios que ya optimizaron sus operaciones
-                con eter. Tu prueba gratis de 14 días comienza en 5 minutos.
+                con Éter. Tu prueba gratis de 14 días comienza en 5 minutos.
               </p>
               <div className="cta-section__benefits">
                 <div className="cta-section__benefit">
-                  <span className="cta-section__benefit-icon">✓</span>
+                  <span className="cta-section__benefit-icon"><Check size={15} strokeWidth={2.5} /></span>
                   14 días de prueba gratis — sin tarjeta de crédito
                 </div>
                 <div className="cta-section__benefit">
-                  <span className="cta-section__benefit-icon">✓</span>
+                  <span className="cta-section__benefit-icon"><Check size={15} strokeWidth={2.5} /></span>
                   Configuración guiada en menos de 5 minutos
                 </div>
                 <div className="cta-section__benefit">
-                  <span className="cta-section__benefit-icon">✓</span>
+                  <span className="cta-section__benefit-icon"><Check size={15} strokeWidth={2.5} /></span>
                   Soporte personalizado durante tu periodo de prueba
                 </div>
                 <div className="cta-section__benefit">
-                  <span className="cta-section__benefit-icon">✓</span>
+                  <span className="cta-section__benefit-icon"><Check size={15} strokeWidth={2.5} /></span>
                   Cancela cuando quieras — sin compromisos
                 </div>
               </div>
@@ -193,7 +196,7 @@ export default function LeadForm() {
                   disabled={status === "loading"}
                 />
                 {errors.name && touched.name && (
-                  <div className="lead-form__error">⚠ {errors.name}</div>
+                  <div className="lead-form__error"><AlertCircle size={13} strokeWidth={2} /> {errors.name}</div>
                 )}
               </div>
 
@@ -213,7 +216,7 @@ export default function LeadForm() {
                   disabled={status === "loading"}
                 />
                 {errors.email && touched.email && (
-                  <div className="lead-form__error">⚠ {errors.email}</div>
+                  <div className="lead-form__error"><AlertCircle size={13} strokeWidth={2} /> {errors.email}</div>
                 )}
               </div>
 
@@ -233,7 +236,7 @@ export default function LeadForm() {
                   disabled={status === "loading"}
                 />
                 {errors.company && touched.company && (
-                  <div className="lead-form__error">⚠ {errors.company}</div>
+                  <div className="lead-form__error"><AlertCircle size={13} strokeWidth={2} /> {errors.company}</div>
                 )}
               </div>
 
@@ -257,7 +260,7 @@ export default function LeadForm() {
                   ))}
                 </select>
                 {errors.industry && touched.industry && (
-                  <div className="lead-form__error">⚠ {errors.industry}</div>
+                  <div className="lead-form__error"><AlertCircle size={13} strokeWidth={2} /> {errors.industry}</div>
                 )}
               </div>
 

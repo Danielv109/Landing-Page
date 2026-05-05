@@ -4,7 +4,7 @@ const steps = [
   {
     number: '01',
     title: 'Elige tu industria',
-    text: 'Selecciona tu tipo de negocio: clínica médica, restaurante, retail o servicios profesionales. eter se configura automáticamente con los módulos más relevantes para ti.',
+    text: 'Selecciona tu tipo de negocio: clínica médica, restaurante, retail o servicios profesionales. Éter se configura automáticamente con los módulos más relevantes para ti.',
   },
   {
     number: '02',
@@ -44,7 +44,7 @@ export default function ProductShowcase() {
               Un sistema que se adapta a ti, no al revés
             </h2>
             <p className="product__description">
-              En lugar de pagar por un software gigante que no usas, eter te permite construir 
+              En lugar de pagar por un software gigante que no usas, Éter te permite construir
               tu plataforma ideal módulo por módulo.
             </p>
           </div>

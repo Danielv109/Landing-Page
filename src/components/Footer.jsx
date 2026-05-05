@@ -8,7 +8,7 @@ export default function Footer() {
           <div className="footer__brand">
             <img
               src="/logo-eter-white.png"
-              alt="eter"
+              alt="Éter"
               height="22"
               style={{ display: "block" }}
             />
@@ -63,7 +63,7 @@ export default function Footer() {
 
         <div className="footer__bottom">
           <div className="footer__copyright">
-            © {new Date().getFullYear()} eter. Todos los derechos reservados.
+            © {new Date().getFullYear()} Éter. Todos los derechos reservados.
           </div>
         </div>
       </div>

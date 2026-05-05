@@ -26,7 +26,7 @@ const posts = [
       <p>En el modelo modular, pagas exactamente por lo que usas. Un consultorio individual podría operar con $299 MXN mensuales usando tres módulos, mientras que una clínica con múltiples especialistas activaría módulos adicionales según su crecimiento. No hay planes forzados ni funciones dormidas que inflan tu factura.</p>
       
       <h3>2. Cumplimiento normativo simplificado</h3>
-      <p>Los módulos clínicos de una plataforma como eter están diseñados desde el inicio para cumplir con la NOM-004-SSA3 (Expediente Clínico), la NOM-024-SSA3 (Interoperabilidad) y las regulaciones de protección de datos (LFPDPPP). Esto significa que no necesitas un equipo técnico dedicado para mantener el cumplimiento.</p>
+      <p>Los módulos clínicos de una plataforma como Éter están diseñados desde el inicio para cumplir con la NOM-004-SSA3 (Expediente Clínico), la NOM-024-SSA3 (Interoperabilidad) y las regulaciones de protección de datos (LFPDPPP). Esto significa que no necesitas un equipo técnico dedicado para mantener el cumplimiento.</p>
 
       <h3>3. Implementación en minutos, no en meses</h3>
       <p>Los sistemas tradicionales requieren procesos de implementación que pueden durar de 3 a 6 meses. Con un enfoque modular, un consultorio puede estar operando en menos de 5 minutos: selecciona la plantilla de "Clínica", activa los módulos necesarios y comienza a agendar citas ese mismo día.</p>
@@ -278,7 +278,7 @@ export function BlogPost() {
 
           <div className="blog-post__cta">
             <h3>¿Listo para modernizar tu negocio?</h3>
-            <p>Prueba eter gratis por 14 días. Sin tarjeta de crédito, sin compromisos.</p>
+            <p>Prueba Éter gratis por 14 días. Sin tarjeta de crédito, sin compromisos.</p>
             <Link to="/#contacto" className="btn btn--accent btn--large">
               Empieza tu prueba gratis →
             </Link>

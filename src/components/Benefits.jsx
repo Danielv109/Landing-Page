@@ -1,33 +1,34 @@
+import { LayoutGrid, Zap, Link2, TrendingUp, Shield, Globe } from 'lucide-react';
 import ScrollAnimation from './ScrollAnimation';
 
 const benefits = [
   {
-    icon: '🧩',
+    icon: LayoutGrid,
     title: 'Solo lo que necesitas',
     text: 'Deja de pagar por funciones que nunca usas. Activa módulos individuales y controla tu presupuesto al centavo.',
   },
   {
-    icon: '⚡',
+    icon: Zap,
     title: 'Implementación en minutos',
     text: 'Sin proyectos de integración de meses. Configura tu plataforma en minutos con asistentes guiados y plantillas por industria.',
   },
   {
-    icon: '🔗',
+    icon: Link2,
     title: 'Todo conectado',
     text: 'Tus módulos se comunican entre sí automáticamente. La cita del paciente genera la factura, actualiza el expediente y envía el recordatorio.',
   },
   {
-    icon: '📈',
+    icon: TrendingUp,
     title: 'Escala sin límites',
-    text: 'Desde un consultorio con un médico hasta una cadena completa. eter crece contigo sin cambiar de plataforma.',
+    text: 'Desde un consultorio con un médico hasta una cadena completa. Éter crece contigo sin cambiar de plataforma.',
   },
   {
-    icon: '🛡️',
+    icon: Shield,
     title: 'Seguridad empresarial',
     text: 'Encriptación de datos, backups automáticos, cumplimiento normativo y roles de acceso granulares para proteger tu información.',
   },
   {
-    icon: '🌐',
+    icon: Globe,
     title: 'Acceso desde cualquier lugar',
     text: 'Plataforma 100% en la nube. Accede desde tu computadora, tablet o celular sin instalar nada.',
   },
@@ -52,7 +53,7 @@ export default function Benefits() {
             </h2>
             <p className="benefits__description">
               Software inflado, implementaciones eternas y costos ocultos. 
-              eter resuelve esto con un enfoque modular que pone a tu negocio primero.
+              Éter resuelve esto con un enfoque modular que pone a tu negocio primero.
             </p>
           </div>
         </ScrollAnimation>
@@ -61,7 +62,9 @@ export default function Benefits() {
           {benefits.map((b, i) => (
             <ScrollAnimation key={b.title} delay={(i % 3) + 1}>
               <div className="benefit-card">
-                <div className="benefit-card__icon">{b.icon}</div>
+                <div className="benefit-card__icon">
+                  <b.icon size={28} strokeWidth={1.5} />
+                </div>
                 <h3 className="benefit-card__title">{b.title}</h3>
                 <p className="benefit-card__text">{b.text}</p>
               </div>

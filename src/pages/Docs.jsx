@@ -1,16 +1,17 @@
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { Rocket, Calendar, Banknote, BarChart2, Package, Lock, Link2 } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
 const sections = [
   {
-    icon: '🚀',
+    icon: Rocket,
     title: 'Primeros pasos',
     items: [
       {
         title: 'Crear tu cuenta',
-        description: 'Regístrate en eter con tu correo electrónico. No necesitas tarjeta de crédito para comenzar tu prueba gratuita de 14 días.',
+        description: 'Regístrate en Éter con tu correo electrónico. No necesitas tarjeta de crédito para comenzar tu prueba gratuita de 14 días.',
       },
       {
         title: 'Seleccionar tu industria',
@@ -27,7 +28,7 @@ const sections = [
     ],
   },
   {
-    icon: '📅',
+    icon: Calendar,
     title: 'Módulo de Agenda',
     items: [
       {
@@ -49,7 +50,7 @@ const sections = [
     ],
   },
   {
-    icon: '💰',
+    icon: Banknote,
     title: 'Módulo de Facturación',
     items: [
       {
@@ -71,7 +72,7 @@ const sections = [
     ],
   },
   {
-    icon: '📊',
+    icon: BarChart2,
     title: 'Módulo de Reportes y Analíticas',
     items: [
       {
@@ -93,7 +94,7 @@ const sections = [
     ],
   },
   {
-    icon: '📦',
+    icon: Package,
     title: 'Módulo de Inventario',
     items: [
       {
@@ -115,7 +116,7 @@ const sections = [
     ],
   },
   {
-    icon: '🔒',
+    icon: Lock,
     title: 'Seguridad y Permisos',
     items: [
       {
@@ -137,7 +138,7 @@ const sections = [
     ],
   },
   {
-    icon: '🔗',
+    icon: Link2,
     title: 'API e Integraciones',
     items: [
       {
@@ -146,7 +147,7 @@ const sections = [
       },
       {
         title: 'Webhooks',
-        description: 'Recibe notificaciones en tiempo real en tus sistemas cuando ocurren eventos en eter: nueva cita, factura emitida, pago recibido.',
+        description: 'Recibe notificaciones en tiempo real en tus sistemas cuando ocurren eventos en Éter: nueva cita, factura emitida, pago recibido.',
       },
       {
         title: 'Integraciones nativas',
@@ -154,7 +155,7 @@ const sections = [
       },
       {
         title: 'Zapier y Make',
-        description: 'Conecta eter con más de 5,000 aplicaciones a través de Zapier o Make. Automatiza flujos de trabajo sin escribir código.',
+        description: 'Conecta Éter con más de 5,000 aplicaciones a través de Zapier o Make. Automatiza flujos de trabajo sin escribir código.',
       },
     ],
   },
@@ -186,7 +187,7 @@ export default function Docs() {
             <h1 className="docs-page__title">Centro de documentación</h1>
             <p className="docs-page__description">
               Todo lo que necesitas para configurar y aprovechar al máximo 
-              cada módulo de la plataforma eter.
+              cada módulo de la plataforma Éter.
             </p>
           </header>
 
@@ -194,7 +195,9 @@ export default function Docs() {
             {sections.map((section) => (
               <div className="docs-section" key={section.title}>
                 <div className="docs-section__header">
-                  <span className="docs-section__icon">{section.icon}</span>
+                  <span className="docs-section__icon">
+                    <section.icon size={24} strokeWidth={1.5} />
+                  </span>
                   <h2 className="docs-section__title">{section.title}</h2>
                 </div>
                 <div className="docs-section__grid">

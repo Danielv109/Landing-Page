@@ -1,26 +1,27 @@
+import { Stethoscope, UtensilsCrossed, Store, Briefcase } from 'lucide-react';
 import ScrollAnimation from './ScrollAnimation';
 
 const industries = [
   {
-    icon: '🩺',
+    icon: Stethoscope,
     title: 'Clínicas y Consultorios',
     text: 'Gestiona expedientes clínicos, agenda de citas, recetas electrónicas y facturación. Todo en cumplimiento con la NOM-004-SSA3.',
     features: ['Expediente clínico', 'Recetas digitales', 'Agenda médica', 'Facturación CFDI', 'Historial del paciente'],
   },
   {
-    icon: '🍽️',
+    icon: UtensilsCrossed,
     title: 'Restaurantes y Cafeterías',
     text: 'Comandas digitales, control de inventario de ingredientes, punto de venta, reservaciones y análisis de ventas por platillo.',
     features: ['Comandas cocina', 'Inventario ingredientes', 'POS integrado', 'Reservaciones', 'Análisis de ventas'],
   },
   {
-    icon: '🏪',
+    icon: Store,
     title: 'Retail y Comercio',
     text: 'Punto de venta, gestión de inventario multi-sucursal, seguimiento de proveedores, facturación y programas de lealtad.',
     features: ['Multi-sucursal', 'Punto de venta', 'Proveedores', 'Lealtad', 'Inventario en tiempo real'],
   },
   {
-    icon: '💼',
+    icon: Briefcase,
     title: 'Servicios Profesionales',
     text: 'Ideal para despachos, consultorías, salones de belleza y más. CRM, facturación, agenda y seguimiento de proyectos en un solo lugar.',
     features: ['CRM avanzado', 'Proyectos', 'Agenda online', 'Facturación', 'Cotizaciones'],
@@ -38,7 +39,7 @@ export default function Industries() {
               Diseñado para tu industria, personalizado para tu negocio
             </h2>
             <p className="industries__description">
-              Cada industria tiene necesidades únicas. eter ofrece configuraciones especializadas 
+              Cada industria tiene necesidades únicas. Éter ofrece configuraciones especializadas
               para que arranques en minutos, no en meses.
             </p>
           </div>
@@ -48,7 +49,9 @@ export default function Industries() {
           {industries.map((ind, i) => (
             <ScrollAnimation key={ind.title} delay={(i % 4) + 1}>
               <div className="industry-card">
-                <div className="industry-card__icon">{ind.icon}</div>
+                <div className="industry-card__icon">
+                  <ind.icon size={26} strokeWidth={1.5} />
+                </div>
                 <h3 className="industry-card__title">{ind.title}</h3>
                 <p className="industry-card__text">{ind.text}</p>
                 <div className="industry-card__features">

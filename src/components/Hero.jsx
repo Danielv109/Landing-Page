@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import ScrollAnimation from "./ScrollAnimation";
+import HeroSphere from "./HeroSphere";
 
 const allLogos = [
   "MedGroup",
@@ -97,7 +98,7 @@ export default function Hero() {
           </h1>
 
           <p className="hero__subtitle">
-            eter es la plataforma modular que se adapta a tu negocio. Médicos,
+            Éter es la plataforma modular que se adapta a tu negocio. Médicos,
             restaurantes, retail — elige solo los módulos que necesitas y no
             pagues de más.
           </p>
@@ -127,9 +128,7 @@ export default function Hero() {
 
         <div className="hero__right">
           <div className="hero__3d-shape">
-            <div className="hero__morph hero__morph--1" />
-            <div className="hero__morph hero__morph--2" />
-            <div className="hero__morph hero__morph--3" />
+            <HeroSphere />
           </div>
         </div>
       </div>

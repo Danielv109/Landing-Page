@@ -3,7 +3,7 @@ import ScrollAnimation from './ScrollAnimation';
 const testimonials = [
   {
     stars: 5,
-    text: '"Antes usábamos 4 herramientas distintas. Con eter condensamos todo en una sola plataforma y nuestro equipo dejó de perder tiempo cambiando entre apps."',
+    text: '"Antes usábamos 4 herramientas distintas. Con Éter condensamos todo en una sola plataforma y nuestro equipo dejó de perder tiempo cambiando entre apps."',
     name: 'Dra. María López',
     role: 'Directora de Clínica Integral',
     initials: 'ML',
@@ -17,7 +17,7 @@ const testimonials = [
   },
   {
     stars: 5,
-    text: '"Lo mejor de eter es que solo pago por lo que uso. Empecé con agenda y facturación, y cuando crecí agregué inventario. Sin sorpresas en la cuenta."',
+    text: '"Lo mejor de Éter es que solo pago por lo que uso. Empecé con agenda y facturación, y cuando crecí agregué inventario. Sin sorpresas en la cuenta."',
     name: 'Ana García',
     role: 'Fundadora de Estudio Belleza AG',
     initials: 'AG',
@@ -40,7 +40,7 @@ export default function Testimonials() {
           <div className="testimonials__header">
             <div className="testimonials__label">Testimonios</div>
             <h2 className="testimonials__title">
-              Lo que dicen quienes ya usan eter
+              Lo que dicen quienes ya usan Éter
             </h2>
           </div>
         </ScrollAnimation>

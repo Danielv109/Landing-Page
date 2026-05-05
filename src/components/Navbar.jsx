@@ -30,7 +30,7 @@ export default function Navbar() {
           <div className="navbar__logo" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} style={{ cursor: 'pointer' }}>
             <img 
               src={scrolled ? '/logo-eter-black.png' : '/logo-eter-white.png'} 
-              alt="eter" 
+              alt="Éter"
               style={{ objectFit: 'contain' }} 
             />
           </div>
